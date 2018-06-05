@@ -1,9 +1,14 @@
+@font-face{
+  font-family:'digital-clock-font';
+  src: url('digital-7.regular.ttf');
+ }
+
 body {
   height: 100%;
   width: 100%;
   background-color: rebeccapurple;
-  font-family: 'Righteous';
-  color: white;
+  font-family: 'Roboto';
+  color: #00ffb2;
   font-size: 2.8em;
 }
 
@@ -29,9 +34,20 @@ body {
 }
 
 .display {
-  margin: 15px 15px;
+  margin: 7px auto;
+}
+
+.operation {
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .countDown {
+  font-family: "digital-clock-font";
+  font-size: 1.8em;
   display: block;
+}
+
+.control {
+  margin: 15px;
 }

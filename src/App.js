@@ -116,17 +116,17 @@ class App extends Component {
         <div className="break">
           <div className="break">Break Length</div>
           <div className="option">
-            <MuiThemeProvider><FloatingActionButton mini={true} onClick={() => this.handleClick(breakMin)}><ContentRemove /></FloatingActionButton></MuiThemeProvider>
+            <MuiThemeProvider><FloatingActionButton className="operation" mini={true} onClick={() => this.handleClick(breakMin)}><ContentRemove /></FloatingActionButton></MuiThemeProvider>
             {this.state.breakLength}
-            <MuiThemeProvider><FloatingActionButton mini={true} onClick={() => this.handleClick(breakPlus)}><ContentAdd /></FloatingActionButton></MuiThemeProvider>
+            <MuiThemeProvider><FloatingActionButton className="operation" mini={true} onClick={() => this.handleClick(breakPlus)}><ContentAdd /></FloatingActionButton></MuiThemeProvider>
           </div>
         </div>
         <div className="session">
           <div className="session">Session Length</div>
           <div className="option">
-            <MuiThemeProvider><FloatingActionButton mini={true} onClick={() => this.handleClick(sessionMin)}><ContentRemove /></FloatingActionButton></MuiThemeProvider>
+            <MuiThemeProvider><FloatingActionButton className="operation" mini={true} onClick={() => this.handleClick(sessionMin)}><ContentRemove /></FloatingActionButton></MuiThemeProvider>
             {this.state.sessionLength}
-            <MuiThemeProvider><FloatingActionButton mini={true} onClick={() => this.handleClick(sessionPlus)}><ContentAdd /></FloatingActionButton></MuiThemeProvider>
+            <MuiThemeProvider><FloatingActionButton className="operation" mini={true} onClick={() => this.handleClick(sessionPlus)}><ContentAdd /></FloatingActionButton></MuiThemeProvider>
           </div>
         </div>
 
@@ -136,9 +136,9 @@ class App extends Component {
             <div>{totalMin}:{totalSec}</div>
           </div>
           <div className="control">
-            <MuiThemeProvider><FloatingActionButton onClick={() => this.handleCondition(play)}><AvPlayArrow /></FloatingActionButton></MuiThemeProvider>
-            <MuiThemeProvider><FloatingActionButton onClick={() => this.handleCondition(pause)}><AvPause /></FloatingActionButton></MuiThemeProvider>
-            <MuiThemeProvider><FloatingActionButton onClick={() => this.handleCondition(replay)}><AvReplay /></FloatingActionButton></MuiThemeProvider>
+            <MuiThemeProvider><FloatingActionButton className="operation" onClick={() => this.handleCondition(play)}><AvPlayArrow /></FloatingActionButton></MuiThemeProvider>
+            <MuiThemeProvider><FloatingActionButton className="operation" onClick={() => this.handleCondition(pause)}><AvPause /></FloatingActionButton></MuiThemeProvider>
+            <MuiThemeProvider><FloatingActionButton className="operation" onClick={() => this.handleCondition(replay)}><AvReplay /></FloatingActionButton></MuiThemeProvider>
           </div>
         </div>
       </div>
